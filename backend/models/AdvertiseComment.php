@@ -35,6 +35,7 @@ class AdvertiseComment extends \yii\db\ActiveRecord
     {
         return [
             [['advertise_id', 'enabled', 'status', 'mark_spam'], 'integer'],
+            [['advertise_id', 'title', 'author_name', 'author_email', 'status', 'mark_spam'], 'required', 'message'=> 'This field is required'],
             [['create_at'], 'safe'],
             [['body'], 'string'],
             [['title'], 'string', 'max' => 200],

@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\grid\DataColumn;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\AdvertisementSearch */
@@ -26,8 +27,33 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'user_id',
-            'category_id',
+
+            //'user_id',
+            [
+                'class' => DataColumn::className(),
+                'attribute' => 'user_id',
+                'format' => 'text',
+                'value' => function($model, $index, $column) {
+                   $user = \backend\models\User::find()->where(['id'=>$model->user_id])->one();
+                    return $user? $user->username : 'Unknown';
+                },
+                'label' => 'User Name',
+            ],
+
+
+            //'category_id',
+            [
+                'class' => DataColumn::className(),
+                'attribute' => 'category_id',
+                'format' => 'text',
+                'value' => function($model, $index, $column) {
+                   $category = \backend\models\Category::find()->where(['id'=>$model->category_id])->one();
+                    return $category? $category->title : 'Unknown';
+                },
+                'label' => 'Category Name',
+            ],
+
+
             'advertise_title',
             'photo_name',
             // 'description:ntext',

@@ -5,21 +5,21 @@ namespace backend\models;
 use Yii;
 
 /**
- * This is the model class for table "catetory_additional_fields".
+ * This is the model class for table "category_additional_fields".
  *
  * @property integer $id
  * @property integer $advertise_id
  * @property integer $optional_field_id
  * @property string $optional_field_value
  */
-class CatetoryAdditionalFields extends \yii\db\ActiveRecord
+class CategoryAdditionalFields extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return 'catetory_additional_fields';
+        return 'category_additional_fields';
     }
 
     /**

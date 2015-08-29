@@ -29,8 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'advertise_id',
-            'create_at',
+            'advertise_id',            
             'title',
             'author_name',
             'author_email:email',
@@ -38,6 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'enabled',
             'status',
             'mark_spam',
+            'create_at',
         ],
     ]) ?>
 

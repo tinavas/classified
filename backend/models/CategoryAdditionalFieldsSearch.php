@@ -5,12 +5,12 @@ namespace backend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\CatetoryAdditionalFields;
+use backend\models\CategoryAdditionalFields;
 
 /**
- * CatetoryAdditionalFieldsSearch represents the model behind the search form about `backend\models\CatetoryAdditionalFields`.
+ * CategoryAdditionalFieldsSearch represents the model behind the search form about `backend\models\CategoryAdditionalFields`.
  */
-class CatetoryAdditionalFieldsSearch extends CatetoryAdditionalFields
+class CategoryAdditionalFieldsSearch extends CategoryAdditionalFields
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class CatetoryAdditionalFieldsSearch extends CatetoryAdditionalFields
      */
     public function search($params)
     {
-        $query = CatetoryAdditionalFields::find();
+        $query = CategoryAdditionalFields::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

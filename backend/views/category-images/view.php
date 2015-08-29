@@ -29,7 +29,14 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'category_id',
+            //'category_id',
+
+            [                      // the owner name of the model
+            'label' => 'Category',
+            $category = \backend\models\Category::find()->where(['id'=>$model->category_id])->one(),
+            'value' => $category->title,
+            ],
+            
             'image',
         ],
     ]) ?>

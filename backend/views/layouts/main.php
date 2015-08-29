@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        //'brandLabel' => 'My Company',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -36,18 +36,18 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'Comments', 'url' => ['/site/advertise-comment']],
-        ['label' => 'Advertisement', 'url' => ['/site/advertisement']],
-        ['label' => 'Category', 'url' => ['/site/category']],
-        ['label' => 'Category Images', 'url' => ['/site/category-images']],
-        ['label' => 'Additional Fields', 'url' => ['/site/category-additional-fields']],
-        ['label' => 'Country', 'url' => ['/site/Country']],
-        ['label' => 'Region', 'url' => ['/site/region']],
-        ['label' => 'City', 'url' => ['/site/city']],
-        ['label' => 'Images', 'url' => ['/site/images']],
-        ['label' => 'Optional Fields', 'url' => ['/site/optional-fields']],
-        ['label' => 'Temp User', 'url' => ['/site/tmp-user']],
-        ['label' => 'User', 'url' => ['/site/user']]
+        ['label' => 'Comments', 'url' => ['/advertise-comment/index']],
+        ['label' => 'Advertisement', 'url' => ['/advertisement/index']],
+        ['label' => 'Category', 'url' => ['/category/index']],
+        ['label' => 'Category Images', 'url' => ['/category-images/index']],
+        ['label' => 'Additional Fields', 'url' => ['/category-additional-fields/index']],
+        ['label' => 'Country', 'url' => ['/country/index']],
+        ['label' => 'Region', 'url' => ['/region/index']],
+        ['label' => 'City', 'url' => ['/city/index']],
+        ['label' => 'Images', 'url' => ['/images/index']],
+        ['label' => 'Optional Fields', 'url' => ['/optional-fields/index']],
+        ['label' => 'Temp User', 'url' => ['/tmp-user/index']],
+        ['label' => 'User', 'url' => ['/user/index']]
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
