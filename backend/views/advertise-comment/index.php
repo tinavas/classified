@@ -25,9 +25,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'advertise_id',
-            'create_at',
+            //'id',
+            'advertise_id',            
             'title',
             'author_name',
             // 'author_email:email',
@@ -35,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'enabled',
             // 'status',
             // 'mark_spam',
+            'create_at',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

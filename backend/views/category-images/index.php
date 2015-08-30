@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\grid\DataColumn;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\CategoryImagesSearch */
@@ -26,7 +27,18 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'category_id',
+            //'category_id',
+
+            [
+                'class' => DataColumn::className(),
+                'attribute' => 'category_id',
+                'format' => 'text',
+                'value' => function($model, $index, $column) {
+                   $category = \backend\models\Category::find()->where(['id'=>$model->category_id])->one();
+                    return $category? $category->title : 'Unknown';
+                },
+                'label' => 'Category Name',
+            ],
             'image',
 
             ['class' => 'yii\grid\ActionColumn'],

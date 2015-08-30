@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\grid\DataColumn;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Advertisement */
@@ -29,8 +30,20 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            'user_id',
-            'category_id',
+            //'user_id',
+
+            [                      // the owner name of the model
+            'label' => 'User ID',
+            $user = \backend\models\User::find()->where(['id'=>$model->user_id])->one(),
+            'value' => $user->username,
+            ],
+
+            //'category_id',
+            [                      // the owner name of the model
+            'label' => 'Category',
+            $category = \backend\models\Category::find()->where(['id'=>$model->category_id])->one(),
+            'value' => $category->title,
+            ],
             'advertise_title',
             'photo_name',
             'description:ntext',

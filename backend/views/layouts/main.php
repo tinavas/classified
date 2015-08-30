@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        //'brandLabel' => 'My Company',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -41,7 +41,7 @@ AppAsset::register($this);
         ['label' => 'Category', 'url' => ['/category/index']],
         ['label' => 'Category Images', 'url' => ['/category-images/index']],
         ['label' => 'Additional Fields', 'url' => ['/category-additional-fields/index']],
-        ['label' => 'Country', 'url' => ['/Country/index']],
+        ['label' => 'Country', 'url' => ['/country/index']],
         ['label' => 'Region', 'url' => ['/region/index']],
         ['label' => 'City', 'url' => ['/city/index']],
         ['label' => 'Images', 'url' => ['/images/index']],
