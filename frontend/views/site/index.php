@@ -4,50 +4,71 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
+<main>
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+  <!-- header-search-main -->
+  <section class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header-search-main">
+      <form class="navbar-form" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Location">
+          <input type="text" class="form-control search-box" placeholder="Search">
+          <button type="submit" class="btn-hdr-search"><i class="fa fa-search"></i>Search</button>
         </div>
-
+      </form>
     </div>
-</div>
+  </section>
+  <!-- /header-search-main -->
+
+
+  <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hm-wrap">
+    <div class="container">
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 cat-wrap">
+        <ul>
+          <li><a href=""><i class="fa fa-globe"></i>Property</a></li>
+          <li><a href=""><i class="fa fa-industry"></i> Industry</a></li>
+          <li><a href=""><i class="fa fa-car"></i> Vehicle</a></li>
+          <li><a href=""><i class="fa fa-motorcycle"></i> Motorcycle</a></li>
+        </ul>
+        <ul>  
+          <li><a href=""><i class="fa fa-ship"></i> Boat</a></li>
+          <li><a href=""><i class="fa fa-briefcase"></i> Jobs</a></li>
+          <li><a href=""><i class="fa fa-cutlery"></i> Restaurents</a></li>
+          <li><a href=""><i class="fa fa-plane"></i> Travel</a></li>
+        </ul>
+        <ul>
+          <li><a href=""><i class="fa fa-graduation-cap"></i> Education</a></li>
+          <li><a href=""><i class="fa fa-sitemap"></i> Directory</a></li>
+          <li><a href=""><i class="fa fa-shopping-cart"></i> Shop</a></li>
+          <li><a href=""><i class="fa fa-building-o"></i> Mall</a></li>
+        </ul>
+        <ul>
+          <li><a href=""><i class="fa fa-beer"></i> Samfunn</a></li>
+          <li><a href="<?php echo Yii::getAlias('@web') ?>/design/../icon/cubes"><i class="fa fa-cubes"></i> For Sale</a></li>
+          <li><a href="<?php echo Yii::getAlias('@web') ?>/design/../icon/cubes"><i class="fa fa-cubes"></i> Offering</a></li>
+          <li><a href="<?php echo Yii::getAlias('@web') ?>/design/../icon/cubes"><i class="fa fa-money"></i> Bid/Auction</a></li>
+        </ul>
+      </div><!-- /cat-wrap-->
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hm-col-right">
+        <div class="submit-ad-box">
+          <h3>Sell Your Item On Our Website</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+            <a class="btn-submit-ad" href="#">Submit an Ad</a>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
+        </div>
+        <img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
+        <img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
+      </div>
+
+        <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hm-btm-ad">
+          <img style="width:49%;" class="" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
+          <img style="width:49%;" class="" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
+        </div>
+    </div><!-- /container-->
+  </section><!-- /hm-wrap -->
+
+<!-- Ads Boxes -->
+  <div class="ads-vr-left"><img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-vr.jpg"></div>
+  <div class="ads-vr-right"><img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-vr.jpg"></div>
+<!-- /Ads Boxes -->
+</main>
