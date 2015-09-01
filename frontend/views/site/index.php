@@ -56,19 +56,7 @@ $this->title = 'My Yii Application';
             <a class="btn-submit-ad" href="#">Submit an Ad</a>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</P>
         </div>
-        <img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
-        <img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
       </div>
 
-        <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hm-btm-ad">
-          <img style="width:49%;" class="" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
-          <img style="width:49%;" class="" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-hr.jpg">
-        </div>
-    </div><!-- /container-->
-  </section><!-- /hm-wrap -->
-
-<!-- Ads Boxes -->
-  <div class="ads-vr-left"><img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-vr.jpg"></div>
-  <div class="ads-vr-right"><img class="img-responsive" src="<?php echo Yii::getAlias('@web') ?>/design/template/img/ads-bnr-vr.jpg"></div>
-<!-- /Ads Boxes -->
-</main>
+    </div>
+</div>
